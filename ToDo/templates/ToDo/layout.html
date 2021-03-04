@@ -1,0 +1,32 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TODO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+    <div style="margin-top:50px;width: 200px; display: flex; justify-content: space-around;">
+        <div>
+            <a href="{% url 'login' %}">
+                <input type="button" value="SignIn" >
+            </a>        
+        </div>
+        <div>
+            <a href="{% url 'registration' %}">
+                <input type="button" value="SignUp" >
+            </a>
+        </div>
+    </div>
+    </div>
+    {{ name }}
+    </body>
+    {% block body %}{% endblock %}
+</body>
+</html>
