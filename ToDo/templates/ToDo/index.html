@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ToDo List</title>
+    </head>
+    <body>
+        <h1>Tasks</h1>
+        <ul>
+            {% for task in tasks %}
+            <ul>
+                <li>{{task.is_completed}}</li>
+                
+            </ul>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>
